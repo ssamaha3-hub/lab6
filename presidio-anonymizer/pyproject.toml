@@ -19,7 +19,6 @@ classifiers = [
 keywords = ["presidio_anonymizer"]
 urls = {Homepage = "https://github.com/Microsoft/presidio"}
 readme = "README.md"
-
 requires-python = ">=3.9,<4.0"
 dependencies = [
     "cryptography (<44.1)"
@@ -35,6 +34,12 @@ ahds = [
     "azure-health-deidentification (>=1.1.0b1,<2.0.0)"
 ]
 
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
 [tool.poetry.group.dev.dependencies]
 pip = "*"
 ruff = "*"
@@ -42,3 +47,4 @@ pytest = "*"
 pytest-mock = "*"
 python-dotenv = "*"
 pre_commit = "*"
+pytest-cov = "^7.0.0"
