@@ -35,7 +35,11 @@ ahds = [
 ]
 
 [tool.poetry]
-package-mode = false
+name = "presidio-anonymizer"
+version = "2.2.360"
+description = "Presidio Anonymizer package"
+authors = ["Presidio <presidio@microsoft.com>"]
+package-mode = true
 
 [tool.poetry.dependencies]
 python = "^3.9"
